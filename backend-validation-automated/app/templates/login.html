@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <style>
+        span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <span>{{ message }}</span>
+    <h1>Login</h1>
+    <form method="post" action="/login">
+        Username:
+        <input type="text" name="username" required><br>
+        Password:
+        <input type="password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+    <p><a href="/register">Create an account</a></p>
+</body>
+
+</html>
