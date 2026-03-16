@@ -6,6 +6,9 @@
     <span style="color: green;">
     {{ message | default('') }}
     </span>
+    <span style="color: red;">
+    {{ error | default('') }}
+    </span>
     <h1>Login</h1>
     <form method="post" action="/login">
         <label for="username">Username:</label>
@@ -14,4 +17,6 @@
         <input type="password" id="password" name="password" required><br><br>
         <input type="submit" value="Login">
     </form>
-   
+    <a href="{{ url_for('register') }}">Create an account</a>
+</body>
+</html>
